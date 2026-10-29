@@ -1,0 +1,49 @@
+{
+  "pass": true,
+  "mode": "fp",
+  "subject_checked": false,
+  "subject_detected": false,
+  "official": "/fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane4/cases/case_0389/official-q0.png",
+  "opening": "/fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane4/cases/case_0389/opening-gate.jpg",
+  "mask": null,
+  "subject_bbox_official": [
+    369,
+    18,
+    479,
+    158
+  ],
+  "subject_bbox_opening": [
+    364,
+    12,
+    482,
+    163
+  ],
+  "subject_cx_official": 0.6625,
+  "subject_cy_official": 0.2444,
+  "subject_cx_opening": 0.6609,
+  "subject_cy_opening": 0.2431,
+  "subject_area_official": 0.0668,
+  "subject_area_opening": 0.0773,
+  "subject_cx_delta": 0.0016,
+  "subject_cy_delta": 0.0014,
+  "subject_area_rel": 0.157,
+  "horizon_official": 0.5194,
+  "horizon_opening": 0.5056,
+  "horizon_delta": 0.0139,
+  "gray_mae": 75.03,
+  "upper_fill_official": 0.9192,
+  "upper_fill_opening": 0.4162,
+  "upper_fill_delta": 0.503,
+  "thresholds": {
+    "cx": 0.08,
+    "cy": 0.08,
+    "area_rel": 0.25,
+    "horizon": 0.06,
+    "upper_fill": null,
+    "mode": "fp"
+  },
+  "reasons": [
+    "within_thresholds",
+    "subject_skipped_fp_no_reliable_subject"
+  ]
+}

@@ -25,7 +25,7 @@
 <body>
 <h1>Orbia-720 · 远程验收</h1>
 <p class="meta">
-  更新：2026-10-29 18:55 Asia/Shanghai · SDK pin a37c008f · TimedActions <strong>demo ~100帧@16fps — 非金标 357</strong><br/>
+  更新：2026-10-29 19:51 Asia/Shanghai · SDK pin a37c008f · TimedActions <strong>demo ~100帧@16fps — 非金标 357</strong><br/>
   未碰 -at / xxk / Seedance / Sims · 灰白未标 PASS · 只交付本链接
 </p>
 
@@ -38,6 +38,7 @@
     <tr><td>case_0014</td><td>lane3</td><td>look_yaw</td><td><span class="badge pass">OK</span></td><td><span class="badge pass">PASS</span> mae=0.49</td><td><span class="badge pass">PASS</span></td><td>demo 非金标</td></tr>
   </tbody>
 </table>
+
 <section class="card" id="case_0012">
   <h2>case_0012 · nav_straight · <span class="badge pass">GATE PASS</span></h2>
   <p>OPENING_LOCK mae=0.6654 · COMPOSITION horizon Δ=0.0306（shared settle_opening_horizon_fp + bake_settle_pitch_fp + __ORBIA_SET_PITCH__）· demo ~100@16fps 非金标</p>
@@ -49,7 +50,7 @@
 </section>
 <section class="card" id="case_0003">
   <h2>case_0003 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
-  <p>OPENING_LOCK mae=1.6008 · COMPOSITION PASS · motion-16fps 已嵌页（NAS md5 9f59b7da…）· demo ~100@16fps 非金标</p>
+  <p>OPENING_LOCK mae=1.6008 · COMPOSITION PASS · motion-16fps 已嵌页 · demo ~100@16fps 非金标</p>
   <div class="row">
     <figure><figcaption>official</figcaption><img src="cases/case_0003/official_opening.png"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0003/opening-gate.jpg"/></figure>
@@ -64,9 +65,8 @@
     <figure><figcaption>motion</figcaption><video controls src="cases/case_0014/motion-16fps.mp4"></video></figure>
   </div>
 </section>
-
-<h2>LWDP-Codex lane4（原 11 题 · 门禁+录制完成）</h2>
-<p class="meta">结论：<strong>GATE PASS 9 / FAIL 2</strong>；9 题均已录 motion + OPENING_LOCK PASS。settle=pitch sweep+refine。demo 非金标。</p>
+<h2>LWDP-Codex lane4（原 11 题）</h2>
+<p class="meta">结论：<strong>GATE PASS 9 / FAIL 2</strong>；9 题均已录 motion + OPENING_LOCK PASS。demo 非金标。</p>
 <table>
   <thead><tr><th>case</th><th>lane/pod</th><th>mode</th><th>RECORD</th><th>OPENING_LOCK</th><th>COMPOSITION</th><th>notes</th></tr></thead>
   <tbody>
@@ -75,76 +75,85 @@
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.7134</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0031</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.3761</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0043</td><td>lane4 / orb</td><td>nav_arc</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.2664</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0083</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.7100</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0100</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.6731</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0135</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.3315</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0156</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.1009</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0206</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.5963</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0207</td><td>lane4 / orb</td><td>nav_strafe</td>
       <td><span class="badge pass">OK</span></td>
       <td><span class="badge pass">PASS</span> mae=0.2098</td>
       <td><span class="badge pass">PASS</span></td>
-      <td>LWDP-Codex · demo ~100@16fps 非金标</td>
-    </tr>    <tr>
+      <td>LWDP-Codex · demo 非金标</td>
+    </tr>
+    <tr>
       <td>case_0024</td><td>lane4</td><td>orbit_strafe_yaw</td>
       <td><span class="badge warn">未录</span></td>
       <td>—</td>
-      <td><span class="badge fail">FAIL</span></td>
-      <td>horizon settle 未达≤0.06（sweep+refine 后仍 FAIL）</td>
-    </tr>    <tr>
+      <td><span class="badge fail">FAIL_NO_SETTLE</span></td>
+      <td>playable runtime: Vec3 is not defined；shared settle 无法跑通（非单题补丁）</td>
+    </tr>
+    <tr>
       <td>case_0042</td><td>lane4</td><td>nav_strafe</td>
       <td><span class="badge warn">未录</span></td>
       <td>—</td>
-      <td><span class="badge fail">FAIL</span></td>
-      <td>horizon settle 未达≤0.06（sweep+refine 后仍 FAIL）</td>
+      <td><span class="badge fail">FAIL_COMPOSITION</span></td>
+      <td>shared settle+bake 后 horizon_delta=0.369&gt;0.06</td>
     </tr>
   </tbody>
 </table>
-
 <section class="card" id="case_0027">
   <h2>case_0027 · peek_shuttle · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.7134 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0027/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0027/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0027/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0027/motion-16fps.mp4"></video></figure>
   </div>
@@ -154,7 +163,7 @@
   <h2>case_0031 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.3761 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0031/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0031/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0031/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0031/motion-16fps.mp4"></video></figure>
   </div>
@@ -164,7 +173,7 @@
   <h2>case_0043 · nav_arc · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.2664 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0043/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0043/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0043/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0043/motion-16fps.mp4"></video></figure>
   </div>
@@ -174,7 +183,7 @@
   <h2>case_0083 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.7100 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0083/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0083/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0083/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0083/motion-16fps.mp4"></video></figure>
   </div>
@@ -184,7 +193,7 @@
   <h2>case_0100 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.6731 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0100/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0100/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0100/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0100/motion-16fps.mp4"></video></figure>
   </div>
@@ -194,7 +203,7 @@
   <h2>case_0135 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.3315 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0135/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0135/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0135/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0135/motion-16fps.mp4"></video></figure>
   </div>
@@ -204,7 +213,7 @@
   <h2>case_0156 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.1009 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0156/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0156/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0156/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0156/motion-16fps.mp4"></video></figure>
   </div>
@@ -214,7 +223,7 @@
   <h2>case_0206 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.5963 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0206/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0206/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0206/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0206/motion-16fps.mp4"></video></figure>
   </div>
@@ -224,12 +233,203 @@
   <h2>case_0207 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
   <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.2098 · COMPOSITION within_thresholds · demo 非金标</p>
   <div class="row">
-    <figure><figcaption>official-q0</figcaption><img src="cases/case_0207/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>official</figcaption><img src="cases/case_0207/official-q0.jpg" alt="official"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0207/opening-gate.jpg" alt="gate"/></figure>
     <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0207/motion-16fps.mp4"></video></figure>
   </div>
   <p class="nas">NAS: /fsx/.../lane4/cases/case_0207/</p>
 </section>
+<h2>Wave1 + pending6（lane4 续跑）</h2>
+<p class="meta">本轮新 PASS+录制：<strong>0337 / 0389 / 0405</strong>；另补上页此前已 GATE_PASS+mp4 但未入 index 的 Wave1 题。阈值阈值 demo 非金标。</p>
+<table>
+  <thead><tr><th>case</th><th>lane/pod</th><th>mode</th><th>RECORD</th><th>OPENING_LOCK</th><th>COMPOSITION</th><th>notes</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>case_0227</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=1.3274</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0260</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.4840</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0337</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.6640</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>本轮新 PASS · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0340</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.7206</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0389</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.5674</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>本轮新 PASS · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0405</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.8753</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>本轮新 PASS · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0444</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.6818</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0467</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.4525</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0502</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.2268</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+    <tr>
+      <td>case_0521</td><td>lane4 / orb</td><td>nav_strafe</td>
+      <td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.5441</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>Wave1 续页 · demo 非金标</td>
+    </tr>
+  </tbody>
+</table>
+<section class="card" id="case_0227">
+  <h2>case_0227 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=1.3274 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0227/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0227/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0227/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0227/</p>
+</section>
+<section class="card" id="case_0260">
+  <h2>case_0260 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.4840 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0260/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0260/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0260/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0260/</p>
+</section>
+<section class="card" id="case_0337">
+  <h2>case_0337 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.6640 · COMPOSITION within_thresholds · demo 非金标 · 本轮新</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0337/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0337/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0337/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0337/</p>
+</section>
+<section class="card" id="case_0340">
+  <h2>case_0340 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.7206 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0340/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0340/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0340/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0340/</p>
+</section>
+<section class="card" id="case_0389">
+  <h2>case_0389 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.5674 · COMPOSITION within_thresholds · demo 非金标 · 本轮新</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0389/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0389/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0389/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0389/</p>
+</section>
+<section class="card" id="case_0405">
+  <h2>case_0405 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.8753 · COMPOSITION within_thresholds · demo 非金标 · 本轮新</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0405/official-q0.jpg" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0405/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0405/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0405/</p>
+</section>
+<section class="card" id="case_0444">
+  <h2>case_0444 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.6818 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0444/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0444/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0444/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0444/</p>
+</section>
+<section class="card" id="case_0467">
+  <h2>case_0467 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.4525 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0467/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0467/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0467/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0467/</p>
+</section>
+<section class="card" id="case_0502">
+  <h2>case_0502 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.2268 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0502/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0502/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0502/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0502/</p>
+</section>
+<section class="card" id="case_0521">
+  <h2>case_0521 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>PATH=LWDP-Codex · OPENING_LOCK mae=0.5441 · COMPOSITION within_thresholds · demo 非金标</p>
+  <div class="row">
+    <figure><figcaption>official</figcaption><img src="cases/case_0521/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0521/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion-16fps</figcaption><video controls src="cases/case_0521/motion-16fps.mp4"></video></figure>
+  </div>
+  <p class="nas">NAS: /fsx/.../lane4/cases/case_0521/</p>
+</section>
+<h2>诚实 FAIL / 阻塞（本轮）</h2>
+<table>
+  <thead><tr><th>case</th><th>verdict</th><th>notes</th></tr></thead>
+  <tbody>
+    <tr><td>case_0226</td><td><span class="badge fail">FAIL_COMPOSITION</span></td><td>shared settle+bake 后 horizon_delta=0.125&gt;0.06</td></tr>
+    <tr><td>case_0371</td><td><span class="badge fail">FAIL_COMPOSITION</span></td><td>shared settle+bake 后 horizon_delta=0.303&gt;0.06</td></tr>
+    <tr><td>case_0388</td><td><span class="badge fail">FAIL_COMPOSITION</span></td><td>shared settle+bake 后 horizon_delta=0.383&gt;0.06</td></tr>
+    <tr><td>case_0551</td><td><span class="badge fail">FAIL_COMPOSITION</span></td><td>shared settle 找到目标 hz 但 bake 后 opening 仍 hz_d=0.369</td></tr>
+    <tr><td>case_0590</td><td><span class="badge fail">FAIL_NO_SETTLE</span></td><td>playable: ironWarm is not defined（白膜 bug，未做单题补丁）</td></tr>
+    <tr><td>case_0024</td><td><span class="badge fail">FAIL_NO_SETTLE</span></td><td>playable: Vec3 is not defined</td></tr>
+    <tr><td>case_0042</td><td><span class="badge fail">FAIL_COMPOSITION</span></td><td>见上表</td></tr>
+    <tr><td>case_0392</td><td><span class="badge warn">GATE_PASS / RECORD_FAIL</span></td><td>构图过门，录制 opening still dark mean≈10.7（未出 mp4）</td></tr>
+  </tbody>
+</table>
 <p class="meta">灰白不得标 PASS。未过门禁不开 Seedance。交付仅本远程链接，勿拷 Mac。<br/>
 验收页：https://oricter.github.io/orbia-720-review-20261028/</p>
 </body>
