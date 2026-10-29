@@ -1,11 +1,7 @@
 # orbia-720-review-20261028
 
-Wave0 READY 三题（0012 / 0003 / 0014）远程验收页。
+更新：2026-10-29 18:49 Asia/Shanghai
 
-| case | RECORD | OPENING_LOCK | COMPOSITION |
-|------|--------|--------------|-------------|
-| 0012 | OK | PASS mae=0.78 | **FAIL** horizon_delta=0.308 |
-| 0003 | OK | PASS mae=1.60 | PASS |
-| 0014 | OK | PASS mae=0.49 | PASS |
-
-Demo TimedActions ~100@16fps（6.25s）— **非金标 357**。
+- Wave0 READY：0012 FAIL / 0003 PASS / 0014 PASS
+- LWDP-Codex 原11题：GATE PASS **9**/11（0027/0031/0043/0083/0100/0135/0156/0206/0207）均已录；FAIL 0024/0042（horizon）
+- Pages: https://oricter.github.io/orbia-720-review-20261028/

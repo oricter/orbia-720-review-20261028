@@ -1,8 +1,8 @@
 {
-  "pass": false,
+  "pass": true,
   "mode": "fp",
-  "subject_checked": true,
-  "subject_detected": true,
+  "subject_checked": false,
+  "subject_detected": false,
   "official": "/fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane1/cases/case_0012/official_opening.png",
   "opening": "/fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane1/cases/case_0012/opening-gate.jpg",
   "mask": null,
@@ -13,27 +13,27 @@
     351
   ],
   "subject_bbox_opening": [
-    0,
-    32,
-    227,
-    347
+    48,
+    28,
+    293,
+    359
   ],
   "subject_cx_official": 0.1773,
   "subject_cy_official": 0.5472,
-  "subject_cx_opening": 0.1773,
-  "subject_cy_opening": 0.5264,
+  "subject_cx_opening": 0.2664,
+  "subject_cy_opening": 0.5375,
   "subject_area_official": 0.3035,
-  "subject_area_opening": 0.3104,
-  "subject_cx_delta": 0.0,
-  "subject_cy_delta": 0.0208,
-  "subject_area_rel": 0.0227,
+  "subject_area_opening": 0.352,
+  "subject_cx_delta": 0.0891,
+  "subject_cy_delta": 0.0097,
+  "subject_area_rel": 0.1599,
   "horizon_official": 0.5111,
-  "horizon_opening": 0.2028,
-  "horizon_delta": 0.3083,
-  "gray_mae": 3.02,
+  "horizon_opening": 0.5417,
+  "horizon_delta": 0.0306,
+  "gray_mae": 69.22,
   "upper_fill_official": 1.0,
-  "upper_fill_opening": 0.9999,
-  "upper_fill_delta": 0.0001,
+  "upper_fill_opening": 1.0,
+  "upper_fill_delta": 0.0,
   "thresholds": {
     "cx": 0.08,
     "cy": 0.08,
@@ -43,6 +43,7 @@
     "mode": "fp"
   },
   "reasons": [
-    "horizon_delta=0.308>0.06"
+    "within_thresholds",
+    "subject_skipped_fp_no_reliable_subject"
   ]
 }

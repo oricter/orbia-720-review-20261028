@@ -1,3 +1,2 @@
-mae=0.7770
+mae=0.6654
 mode_fp=1
-same_settle=1
