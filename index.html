@@ -25,7 +25,7 @@
 <body>
 <h1>Orbia-720 · 远程验收</h1>
 <p class="meta">
-  更新：2026-10-29 18:49 Asia/Shanghai · SDK pin a37c008f · TimedActions <strong>demo ~100帧@16fps — 非金标 357</strong><br/>
+  更新：2026-10-29 18:55 Asia/Shanghai · SDK pin a37c008f · TimedActions <strong>demo ~100帧@16fps — 非金标 357</strong><br/>
   未碰 -at / xxk / Seedance / Sims · 灰白未标 PASS · 只交付本链接
 </p>
 
@@ -33,13 +33,14 @@
 <table>
   <thead><tr><th>case</th><th>lane/pod</th><th>mode</th><th>RECORD</th><th>OPENING_LOCK</th><th>COMPOSITION</th><th>notes</th></tr></thead>
   <tbody>
-    <tr><td>case_0012</td><td>lane1</td><td>nav_straight</td><td><span class="badge pass">OK</span></td><td><span class="badge pass">PASS</span> mae=0.78</td><td><span class="badge fail">FAIL</span></td><td>horizon_delta=0.308</td></tr>
+    <tr><td>case_0012</td><td>lane1 / orb-1</td><td>nav_straight</td><td><span class="badge pass">OK</span></td><td><span class="badge pass">PASS</span> mae=0.6654</td><td><span class="badge pass">PASS</span></td><td>shared settle+bake；horizon_delta=0.0306；demo 非金标</td></tr>
     <tr><td>case_0003</td><td>lane2</td><td>nav_strafe</td><td><span class="badge pass">OK</span></td><td><span class="badge pass">PASS</span> mae=1.60</td><td><span class="badge pass">PASS</span></td><td>demo 非金标</td></tr>
     <tr><td>case_0014</td><td>lane3</td><td>look_yaw</td><td><span class="badge pass">OK</span></td><td><span class="badge pass">PASS</span> mae=0.49</td><td><span class="badge pass">PASS</span></td><td>demo 非金标</td></tr>
   </tbody>
 </table>
 <section class="card" id="case_0012">
-  <h2>case_0012 · <span class="badge fail">COMPOSITION FAIL</span></h2>
+  <h2>case_0012 · nav_straight · <span class="badge pass">GATE PASS</span></h2>
+  <p>OPENING_LOCK mae=0.6654 · COMPOSITION horizon Δ=0.0306（shared settle_opening_horizon_fp + bake_settle_pitch_fp + __ORBIA_SET_PITCH__）· demo ~100@16fps 非金标</p>
   <div class="row">
     <figure><figcaption>official</figcaption><img src="cases/case_0012/official_opening.png"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0012/opening-gate.jpg"/></figure>
@@ -47,10 +48,12 @@
   </div>
 </section>
 <section class="card" id="case_0003">
-  <h2>case_0003 · <span class="badge pass">GATE PASS</span></h2>
+  <h2>case_0003 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>OPENING_LOCK mae=1.6008 · COMPOSITION PASS · motion-16fps 已嵌页（NAS md5 9f59b7da…）· demo ~100@16fps 非金标</p>
   <div class="row">
     <figure><figcaption>official</figcaption><img src="cases/case_0003/official_opening.png"/></figure>
     <figure><figcaption>opening-gate</figcaption><img src="cases/case_0003/opening-gate.jpg"/></figure>
+    <figure><figcaption>motion</figcaption><video controls src="cases/case_0003/motion-16fps.mp4"></video></figure>
   </div>
 </section>
 <section class="card" id="case_0014">
