@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Orbia-720 Wave0 READY review 2026-10-28</title>
+<style>
+  :root { font-family: ui-sans-serif, system-ui, sans-serif; color: #111; background:#f6f7f9; }
+  body { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 1.4rem; }
+  .meta { color:#555; font-size:.9rem; margin-bottom: 1.5rem; }
+  .card { background:#fff; border:1px solid #ddd; border-radius:10px; padding:16px; margin:16px 0; }
+  .row { display:flex; flex-wrap:wrap; gap:12px; }
+  .row figure { margin:0; flex:1 1 220px; }
+  .row img, .row video { width:100%; border-radius:6px; background:#000; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:.75rem; font-weight:600; }
+  .pass { background:#d1fae5; color:#065f46; }
+  .fail { background:#fee2e2; color:#991b1b; }
+  .warn { background:#fef3c7; color:#92400e; }
+  table { border-collapse: collapse; width:100%; font-size:.9rem; }
+  th, td { border:1px solid #e5e7eb; padding:6px 8px; text-align:left; }
+  code { font-size:.8rem; }
+  .nas { font-size:.75rem; color:#666; word-break:break-all; }
+</style>
+</head>
+<body>
+<h1>Orbia-720 Wave0 READY · 录制验收</h1>
+<p class="meta">
+  更新：2026-10-29 Asia/Shanghai · WTP pin a37c008f · TimedActions <strong>demo ~100帧@16fps（6.25s）— 非金标 357</strong><br/>
+  pods：orb-1=0012 / orb-2=0003 / orb-3=0014 · 未碰 -at / xxk / Seedance / Sims
+</p>
+
+<table>
+  <thead><tr><th>case</th><th>lane/pod</th><th>mode</th><th>RECORD</th><th>OPENING_LOCK</th><th>COMPOSITION</th><th>notes</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>case_0012</td><td>lane1 / orb-1</td><td>nav_straight</td><td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.78</td>
+      <td><span class="badge fail">FAIL</span></td>
+      <td>horizon_delta=0.308&gt;0.06；需修 camera/opening 后重门禁+重录</td>
+    </tr>
+    <tr>
+      <td>case_0003</td><td>lane2 / orb-2</td><td>nav_strafe</td><td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=1.60</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>demo 100帧；非金标长度</td>
+    </tr>
+    <tr>
+      <td>case_0014</td><td>lane3 / orb-3</td><td>look_yaw</td><td><span class="badge pass">OK</span></td>
+      <td><span class="badge pass">PASS</span> mae=0.49</td>
+      <td><span class="badge pass">PASS</span></td>
+      <td>demo 100帧；非金标长度</td>
+    </tr>
+  </tbody>
+</table>
+
+<section class="card" id="case_0012">
+  <h2>case_0012 · nav_straight · <span class="badge fail">COMPOSITION FAIL</span></h2>
+  <p>OPENING_LOCK mae=0.7770 · horizon_official=0.511 / horizon_opening=0.203 · Δ=0.308</p>
+  <div class="row">
+    <figure><figcaption>official_opening</figcaption><img src="cases/case_0012/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0012/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion frame0</figcaption><img src="cases/case_0012/motion-frame0.jpg" alt="f0"/></figure>
+  </div>
+  <div class="row"><figure><figcaption>motion-16fps (demo) — COMPOSITION FAIL 仅供对照</figcaption>
+      <video controls src="cases/case_0012/motion-16fps.mp4"></video></figure></div>
+  <p class="nas">NAS: /fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane1/cases/case_0012/motion-16fps.mp4</p>
+</section>
+
+<section class="card" id="case_0003">
+  <h2>case_0003 · nav_strafe · <span class="badge pass">GATE PASS</span></h2>
+  <p>OPENING_LOCK mae=1.6008 · horizon_delta=0.0028 · COMPOSITION within_thresholds</p>
+  <div class="row">
+    <figure><figcaption>official_opening</figcaption><img src="cases/case_0003/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0003/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion frame0</figcaption><img src="cases/case_0003/motion-frame0.jpg" alt="f0"/></figure>
+  </div>
+  <p class="nas">NAS: /fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane2/cases/case_0003/motion-16fps.mp4</p>
+  <p id="v0003"></p>
+</section>
+
+<section class="card" id="case_0014">
+  <h2>case_0014 · look_yaw · <span class="badge pass">GATE PASS</span></h2>
+  <p>OPENING_LOCK mae=0.4867 · horizon_delta=0.0 · COMPOSITION within_thresholds</p>
+  <div class="row">
+    <figure><figcaption>official_opening</figcaption><img src="cases/case_0014/official_opening.png" alt="official"/></figure>
+    <figure><figcaption>opening-gate</figcaption><img src="cases/case_0014/opening-gate.jpg" alt="gate"/></figure>
+    <figure><figcaption>motion frame0</figcaption><img src="cases/case_0014/motion-frame0.jpg" alt="f0"/></figure>
+    <figure><figcaption>motion-16fps (demo)</figcaption>
+      <video controls src="cases/case_0014/motion-16fps.mp4"></video>
+    </figure>
+  </div>
+  <p class="nas">NAS: /fsx/pipeline/world500-standalone/xuxiake/orbia-720-20261028/lane3/cases/case_0014/motion-16fps.mp4</p>
+</section>
+
+<p class="meta">灰白不得标 PASS。0012 诚实 FAIL，不单题 patch camera。lane4 Codex playable（0024/0027/0043）旁路，未并入本页。</p>
+</body>
+</html>
